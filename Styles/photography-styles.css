@@ -1,0 +1,98 @@
+body {
+    font-family: Monaco, monospace;
+    background-color: gainsboro;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background-color: rgb(199, 199, 199);
+    list-style-type: none;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar-element
+{
+    float: left;
+    display: block;
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.navbar-element:hover
+{
+    background-color: #a8a8a8;
+}
+
+.main-section {
+    margin: 10px;
+    padding: 20px;
+    width: auto;
+    min-width: 500px;
+    border-radius: 10px;
+    background-color: gainsboro;
+    box-shadow: 0 5px 10px grey;
+    text-align: center;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+}
+
+.header
+{
+    margin: 10px;
+    padding: 20px;
+    width: auto;
+    border-radius: 10px;
+    background-color: gainsboro;
+    box-shadow: 0 5px 10px grey;
+    text-align: center;
+}
+
+#photo-slider > .photo-slide-image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+}
+
+#photo-slider {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%); 
+  user-select: none;
+}
+
+h1{
+    font-size: 128px;
+    color:rgb(83, 138, 239);
+    line-height: 75%;
+    margin: 0.25em;
+}
+h2{
+    font-size: 64px;
+    color:rgb(237, 90, 74);
+    margin: 0.25em;
+}
+h3{
+    font-size: 48px;
+    color:rgb(88, 212, 90);
+    margin-top: 0.25em;
+    margin-bottom: 0em;
+}
+h4{
+    text-align: center;
+    font-size: 30px;
+    color:rgb(233, 133, 133);
+    margin-top: 0.15em;
+    margin-bottom: 0.15em;
+}

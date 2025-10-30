@@ -57,11 +57,12 @@ body {
 
 #headshot {
     min-width: 250px;
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     object-fit: contain;
     border-radius: 10px;
     overflow: hidden;
+    filter: grayscale(0.1);
 }
 
 .text-line {
@@ -70,6 +71,15 @@ body {
     border-width:0;
     color:gray;
     background-color:rgba(128, 128, 128, 0.5)
+}
+
+.vertical-line {
+    width: 2px;
+    height: 15vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    background-color: rgba(128, 128, 128, 0.5);
+    align-self: center;
 }
 
 .body-section {
@@ -95,7 +105,13 @@ body {
     text-align: center;
 }
 
+.general-text {
+    font-size: 24px;
+    color:grey;
+}
+
 .page-link {
+    font-weight: bold;
     text-decoration: none;
     font-size: 64px;
     color:rgb(237, 90, 74);
@@ -135,44 +151,38 @@ body {
 }
 
 #email-button {
+    text-decoration: none;
+    color: white;
     margin: 10px;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: rgb(255, 165, 95);
-}
-#phone-button{
-    margin: 10px; 
     padding: 15px;
     border-radius: 10px;
     background-color: rgb(133, 212, 104);
 }
+#email-button:hover {
+    text-decoration: underline;
+}
+
 #linkedin-button{
+    text-decoration: none;
+    color: white;
     margin: 10px;
     padding: 15px;
     border-radius: 10px;
     background-color: rgb(60, 127, 227);
 }
-#itch-button{
-    color: white;
-    margin: 10px;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: rgb(254, 101, 101);
-}
-#github-button{
-    margin: 10px;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: rgb(143, 20, 168);
+#linkedin-button:hover {
+    text-decoration: underline;
 }
 
-.contact-button-text{
-    font-size: 24px; 
-    font-size: 20px;
-    color:rgb(255, 255, 255);
-    line-height: 150%;
-    margin: 0px;
-    word-break: keep-all;
+#resume-button {
+    margin:10px;
+}
+#resume-button img {
+    width: 170px;
+    height: 220px;
+}
+#resume-button img:hover {
+    scale: 1.05;
 }
 
 h1{
