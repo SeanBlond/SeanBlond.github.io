@@ -150,6 +150,10 @@ body {
     text-decoration: underline;
 }
 
+.project-image-link img:hover{
+    scale: 1.05;
+}
+
 #email-button {
     text-decoration: none;
     color: white;
@@ -180,6 +184,10 @@ body {
 #resume-button img {
     width: 170px;
     height: 220px;
+    border-style: solid;
+    border-color: rgba(128, 128, 128, 0.5); 
+    border-width: 2px;
+    border-radius: 10px;
 }
 #resume-button img:hover {
     scale: 1.05;
