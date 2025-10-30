@@ -24,6 +24,7 @@ body {
     padding: 20px;
     font-size: 20px;
     text-decoration: none;
+    transition: 0.3s;
 }
 .navbar-element:hover
 {
@@ -150,8 +151,12 @@ body {
     text-decoration: underline;
 }
 
+.project-image-link img{
+    transition: 0.2s;
+}
 .project-image-link img:hover{
     scale: 1.05;
+    box-shadow: 0 5px 10px grey;
 }
 
 #email-button {
@@ -188,9 +193,11 @@ body {
     border-color: rgba(128, 128, 128, 0.5); 
     border-width: 2px;
     border-radius: 10px;
+    transition: 0.2s;
 }
 #resume-button img:hover {
     scale: 1.05;
+    box-shadow: 0 5px 10px grey;
 }
 
 h1{
