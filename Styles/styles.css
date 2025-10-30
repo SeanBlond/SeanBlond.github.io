@@ -1,50 +1,78 @@
 body {
-  background-color: gainsboro;
-}
-.main-section{
-    display: flex;
+    font-family: Monaco, monospace;
+    background-color: gainsboro;
+    margin: 0;
+    padding: 0;
 }
 
-.half-section{
+#navbar {
+    background-color: rgb(199, 199, 199);
+    list-style-type: none;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar-element
+{
+    float: left;
+    display: block;
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.navbar-element:hover
+{
+    background-color: #a8a8a8;
+}
+
+.main-section {
     margin: 10px;
     padding: 20px;
+    width: auto;
+    min-width: 500px;
     border-radius: 10px;
     background-color: gainsboro;
-    font-family: Monaco, monospace;
     box-shadow: 0 5px 10px grey;
     text-align: center;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     display: flex;
 }
 
-.headshot-container{
+.header
+{
     margin: 10px;
-    width: fit-content;
-    font-size: 48px; 
-    padding: 15px;
+    padding: 20px;
+    width: auto;
     border-radius: 10px;
     background-color: gainsboro;
     box-shadow: 0 5px 10px grey;
+    text-align: center;
 }
 
-.headshot{
+#headshot {
+    min-width: 250px;
     width: 250px;
     height: 250px;
     object-fit: contain;
-    filter: grayscale(0.5);
     border-radius: 10px;
     overflow: hidden;
 }
 
-.line{
+.text-line {
     height:2px;
+    width: 100%;
     border-width:0;
     color:gray;
     background-color:rgba(128, 128, 128, 0.5)
 }
 
-.half-section-text{
+.body-section {
     margin: 10px;
     width: auto;
     min-width: 45%;
@@ -53,19 +81,60 @@ body {
     background-color: gainsboro;
     font-family: Monaco, monospace;
     box-shadow: 0 5px 10px grey;
+
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.body-text{
+.body-text {
     font-size: 24px;
     color:grey;
+    width: 70vw;
+    text-align: center;
 }
 
-.list-item-text{
-    font-size: 24px;
-    color:grey;
+.page-link {
+    text-decoration: none;
+    font-size: 64px;
+    color:rgb(237, 90, 74);
+    margin: 0.25em; 
+}
+.page-link:hover {
+    text-decoration: underline;
 }
 
-#email-button{
+.projects-item {
+    display: flex;
+    width: 550px;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: gainsboro;
+    box-shadow: 0 5px 10px grey;
+    padding: 15px;
+}
+.project-image {
+    object-fit: cover;
+    min-width: 200px;
+    min-height: 158px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 5px;
+}
+.project-link{
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color:rgb(233, 133, 133);
+}
+.project-link:hover {
+    text-decoration: underline;
+}
+
+#email-button {
     margin: 10px;
     padding: 15px;
     border-radius: 10px;
@@ -84,6 +153,7 @@ body {
     background-color: rgb(60, 127, 227);
 }
 #itch-button{
+    color: white;
     margin: 10px;
     padding: 15px;
     border-radius: 10px;
@@ -106,16 +176,15 @@ body {
 }
 
 h1{
-    font-size: 140px;
+    font-size: 128px;
     color:rgb(83, 138, 239);
     line-height: 75%;
-    margin: 0px;
+    margin: 0.25em;
 }
 h2{
     font-size: 64px;
     color:rgb(237, 90, 74);
-    margin-top: 0.4em;
-    margin-bottom: 0.65em;
+    margin: 0.25em;
 }
 h3{
     font-size: 48px;
@@ -125,8 +194,8 @@ h3{
 }
 h4{
     text-align: center;
-    font-size: 32px;
+    font-size: 30px;
     color:rgb(233, 133, 133);
-    margin-top: 0.5m;
-    margin-bottom: 0em;
+    margin-top: 0.15em;
+    margin-bottom: 0.15em;
 }

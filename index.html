@@ -2,93 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sean Ammon Resume</title>
-  <link rel="stylesheet" href="resume.css">
+  <title>Sean Ammon - About</title>
+  <link rel="stylesheet" href="Styles/styles.css">
 </head>
 <body>
-    <div style="justify-content: center; display: flex;">
-        <div class="main-section">
-            <div class="headshot-container">
-                <img src="SeanAHeadshotSquare.png" class="headshot">
-            </div>
-            <div class="half-section">
-                <div>
-                    <h1>Sean Ammon</h1>
-                    <h3>Resume</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
+    <ul id="navbar">
+        <li><a class="navbar-element" href="index.html">About</a></li>
+        <li><a class="navbar-element" href="projects.html">Projects</a></li>
+        <li><a class="navbar-element" href="photography.html">Photography</a></li>
+        <li style="float: right;"><a class="navbar-element" href="#contact">Contact</a></li>
+    </ul>
     <div class="main-section">
-        <div class="half-section-text">
-            <h2 style="text-align: center;">Work Experience</h2>
-            <hr class="line">
-            <div>
-                <h4>~Example Job #1~</h4>
-                <p class="body-text">This is some text describing what was done in the job, and what skills where necesary for performance.</p>
-            
-                <h4>~Example Job #2~</h4>
-                <p class="body-text">This is some text describing what was done in the job, and what skills where necesary for performance.</p>
-            
+            <img src="Images/SeanAHeadshotSquare.png" id="headshot">
+
+            <div style="flex-grow: 1;">
+                <h1 style="margin: 0.1em;">Sean Ammon</h1>
+                <h3>Portfolio</h3>
             </div>
-        </div>
-        <div class="half-section-text">
-            <h2 style="text-align: center;">Projects</h2>
-            <hr class="line">
-            <div>
-                <h4>~Example Project #1~</h4>
-                <p class="body-text">This is some text describing a comuter science project, how it was made, why it was made, and what was learned from it.</p>
-            
-                <h4>~Example Project #2~</h4>
-                <p class="body-text">This is some text describing a comuter science project, how it was made, why it was made, and what was learned from it.</p>
-            </div>
-        </div>
     </div>
     <br>
-    <div class="half-section-text">
-        <h2 style="text-align: center;">Skills</h2>
-        <hr class="line"><br>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-            <div style="min-width: 50%;">
-                <ul>
-                    <li class="list-item-text">Game Development and Programming</li>
-                    <li class="list-item-text">Unity Game Engine</li>
-                    <li class="list-item-text">GameMaker Engine</li>
-                    <li class="list-item-text">Proficiency in C#, C++, Python, and GML</li>
-                </ul>
-            </div>
-            <div style="min-width: 50%;">
-                <ul>
-                    <li class="list-item-text">3D Modeling & Animation</li>
-                    <li class="list-item-text">User Interface (UI) Design</li>
-                    <li class="list-item-text">Debugging Operations & Methods</li>
-                    <li class="list-item-text">Teamwork & Version Control</li>
-                </ul>
-            </div>
-        </div>
+    <div class="body-section">
+        <h2 style="text-align: center;">About Me</h2>
+        <hr class="text-line">
+        <p class="body-text">
+            Hello! My name is Sean Ammon, and I'm a 2nd year Game Programming major at Champlain College. 
+            I work with a variety of languages, such as C++, C#, GLSL, and Python. I also have experience with Unity, Unreal Engine, and OpenGL (with GLFW and GLAD). 
+            I'm a big fan of programming and problem-solving, especially as it relates to the visuals and functionality of video games development. 
+        </p>
     </div>
     <br>
-    <div class="half-section-text">
-        <h2 style="text-align: center;">Contact Me</h2>
-        <hr class="line"><br>
+    <div class="body-section">
+        <a href="projects.html" class="page-link">Projects</a>
+        <hr class="text-line">
+        <p class="body-text">Here are some projects I've made! (see more on the projects page!)</p>
+
         <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-            <div id="email-button">
-                <a class="contact-button-text" href="mailto:seanrammon@gmail.com">seanrammon@gmail.com</a>
+            <div class="projects-item">
+                <div style="max-width: 40%; padding: 5px">
+                    <a target="_blank" href="https://seanblond.itch.io/birds-stones" class="project-link">A lot of birds, not many stones</a>
+                    <p>
+                    An arcade-style game made for a Game Technology 1 course. The game features 
+                    custom shaders and UI that compliments a simple gameplay loop.
+                    </p>
+                </div>
+                <a target="_blank" href="https://seanblond.itch.io/birds-stones" class="project-link">
+                    <img class="project-image" src="Images/Project Images/BirdsProjectImage.png" alt="Splash Photo of the Game" style="pointer-events: none;">
+                </a>
             </div>
-            <div id="phone-button">
-                <a class="contact-button-text">(XXX) XXX-XXXX</a>
-            </div>
-            <div id="linkedin-button">
-                <a class="contact-button-text" href="https://www.linkedin.com/in/sean-ammon/">LinkedIn</a>
-            </div>
-            <div id="itch-button">
-                <a class="contact-button-text" href="https://seanblond.itch.io/">Itch.io</a>
-            </div>
-            <div id="github-button">
-                <a class="contact-button-text" href="https://github.com/SeantheShort">GitHub<a>
+
+            <div class="projects-item">
+                <div style="max-width: 40%; padding: 5px;">
+                    <a target="_blank" href="https://seanblond.itch.io/mud" class="project-link">Mud</a>
+                    <p>
+                    A platformer game made for the Pennsylvania Technology Student Association Competition. 
+                    The game features a story about a fallen kingdom explored through a small mud-based lifeform.
+                    </p>
+                </div>
+                <a target="_blank" href="https://seanblond.itch.io/mud" class="project-link">
+                    <img class="project-image" src="Images/Project Images/MudProjectImage.png" alt="Splash Photo of the Game">
+                </a>
             </div>
         </div>
+      </div>
+
     </div>
+    </div>
+    <br>
+    <br>
+    <div class="body-section">
+        <a href="photography.html" class="page-link">Photography</a>
+        <hr class="text-line">
+        <p class="body-text">I'm also fairly interested in photography, so feel free to take a peak at some!</p>
+    </div>
+    <br>
 </body>
 </html>
